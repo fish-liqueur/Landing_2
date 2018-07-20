@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url('../fonts/Oswald-Bold.eot');
+    src: url('../fonts/Oswald-Bold.woff') format("woff"), url('../fonts/Oswald-Bold.ttf') format("truetype"), url('../fonts/Oswald-Bold.svg') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Regular';
+    src: url('../fonts/Oswald-Regular.eot');
+    src: url('../fonts/Oswald-Regular.woff') format("woff"), url('../fonts/Oswald-Regular.ttf') format("truetype"), url('../fonts/Oswald-Regular.svg') format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-width: 319px;
+}
+
+.yellow-text {
+    color: #bcce00;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.blue-text {
+    color: #0e3e6e;
+}
+
+.blue-background {
+    background-color: #0e3e6e;
+}
+
+.display-block {
+    display: block;
+}
+
+.header-back {
+    background-color: #0e3e6e;
+    height: 64px;
+}
+
+
+.logo > a > span:first-child {
+    font-family: Oswald-Bold;
+    font-size: 20px;
+}
+
+.logo > a > span:last-child {
+    font-family: Oswald-Regular;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.contacts-header > span:first-child {
+    font-family: Oswald-Regular;
+    font-size: 20px;
+}
+
+.contacts-header > span:last-child {
+    font-family: Oswald-Bold;
+    font-size: 20px;
+}
+
+.header-back a {
+    text-decoration: none;
+}
+
+.contacts-header > span > a:hover {
+    color: #bcce00;
+}
+
+.logo > a {
+    width: 190px; 
+}
+
+.contacts-header {
+    text-align: right;
+}
+
+.bike-background {
+    background: url("../img/bike1.jpg") 50% 50% no-repeat;
+}
+
+.why-cycling {
+    padding-top: 15px;
+    font-family: Oswald-Regular;
+}
+
+.why-cycling-small {
+    font-family: Oswald-Regular;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.why-cycling-big {
+    font-family: Oswald-Bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.why-cycling-tiny {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 10px;
+    display: inline-block;
+}
+
+.why-cycling-form {
+    text-align: center;
+    background-color: #205fa2;
+    padding: 15px;
+}
+
+#personal-data-check {
+    width: auto;
+}
+
+.why-cycling, .why-cycling-form input {
+    width: 100%;
+}
+
+#button-form {
+    margin-top: 5px;
+    background-color: #bcce00;
+    border-color: #bcce00;
+}
+
+.form-left-coloumn {
+    padding-right: 3px;
+}
+
+.form-right-coloumn {
+    padding-left: 3px;
+}
+
+.three-step-background {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.step-one, .step-two, .step-three {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto;
+}
+
+.step-one {
+    background: url("../img/steps.png") 0 0 no-repeat;
+}
+
+.step-two {
+    background: url("../img/steps.png") -75px 0 no-repeat;
+}
+
+.step-three {
+    background: url("../img/steps.png") -150px 0 no-repeat;
+}
+
+.bike-fat-background {
+    position: relative;
+/*    margin-top: -15px;
+    padding: -15px;*/
+padding-top: 10px;
+   
+}
+
+.bike-fat-background::after {
+    content: "";
+    background: url(../img/bike2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;  
+}
+
+.bike-fat-background::before {
+    content: "";
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+    background-color: #0e3e6e;
+}
+
+.butt-pic {
+    max-width: 100%;
+    max-height: 100%;    
+    background: 0 0 no-repeat;
+}
+
+.sad-story {
+    text-align: left;
+}
+
+.bike-fat-background:last-child {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 15px -15px;
+}
+
+@media (max-width: 575px) {
+    .header-back {
+        height: 140px;
+    }
+    .contacts-header {
+        text-align: center;
+    }
+    .logo > a {
+        margin: 0 auto;
+    }
+    .bike-background {
+        background-image: none;
+        background-color: #0e3e6e;
+    }
+    .form-left-coloumn {
+        padding-right: 15px;
+    }
+    .form-right-coloumn {
+        padding-left: 15px;
+    }
+    .why-cycling span.blue-text {
+        color: #bcce00; 
+    }
+}
