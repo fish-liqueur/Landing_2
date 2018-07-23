@@ -167,10 +167,10 @@ body {
 
 .bike-fat-background {
     position: relative;
-/*    margin-top: -15px;
-    padding: -15px;*/
-padding-top: 10px;
-   
+    /*    margin-top: -15px;
+        padding: -15px;*/
+    padding-top: 10px;
+
 }
 
 .bike-fat-background::after {
@@ -214,6 +214,39 @@ padding-top: 10px;
     text-align: center;
     margin: 15px -15px;
 }
+
+.feedback {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.feedback > div > span:last-child {
+    font-weight: 700;
+}
+
+.feedback > div > i {
+    color: #bbb;
+    font-size: 30px;
+}
+
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0e3e6e;
+}
+
+.footer div:first-child {
+    text-align: right;
+}
+
+.footer div:last-child {
+    text-align: left;
+}
+
+.footer > div > a {
+color: #fff;
+}
+
 
 @media (max-width: 575px) {
     .header-back {
